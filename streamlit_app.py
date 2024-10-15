@@ -13,7 +13,7 @@ response = client.chat.completions.create(
   model="gpt-4o-mini",
   messages=[
     {"role": "system", "content": "Complete the following prefix"},
-    {"role": "user", "content": "Damascus is a"}
+    {"role": "user", "content": "Barcelona is a"}
   ],
   n=10,
   max_tokens=20
