@@ -21,4 +21,5 @@ response = client.chat.completions.create(
 
 ### Print all 10 completions:
 for i in range(10):
-  st.write(response.choices[i].message.content)
+  original_title = '<p style="font-family:Courier; color:Red; font-size: 20px;">'+response.choices[i].message.content+'</p>'
+  st.markdown(original_title, unsafe_allow_html=True)
